@@ -7,17 +7,3 @@ $sel update
 puts $outfile "$i  [$sel num]"
  }
 close $outfile
-
-
-
-
-
-
-
-
-
-
-
-
-
-
