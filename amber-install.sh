@@ -32,7 +32,7 @@ fi
 # for cpu version
 # yes| ./configure gnu
 # before installing gpu version, cuda must been installed.
-./configure -cuda gnu
+yes| ./configure -cuda gnu
 
 # set environment variable
 source amber.sh
