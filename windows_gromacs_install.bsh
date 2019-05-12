@@ -33,7 +33,7 @@ if echo $(basename $package .tar.gz)|grep -i 2019 > /dev/null 2>&1; then
 	cd build/
 	install_file=`echo | pwd`
 	
-	#### here, I changed pme-internal.h file because this vs2017 version(RTM 15) would caused a error, but if you update vs2017, it seems that no error occurred. ####
+	#### here, I changed pme-internal.h file because this vs2017 version(RTM 15) would cause a error, but if you update vs2017, it seems that no error occurred. ####
 	sed -i 's/enum PmeRunMode runMode/enum class PmeRunMode runMode/' ${install_file}/../src/gromacs/ewald/pme-internal.h
 	
 	# cmake source code
